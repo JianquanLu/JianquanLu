@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/readme/hero.gif" width="100%" alt="Jianquan Lu builds reliable positioning and navigation systems from GNSS and multi-sensor observations">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Jianquan Lu builds reliable positioning and navigation systems from GNSS and multi-sensor observations">
 </p>
 
 <p align="center">

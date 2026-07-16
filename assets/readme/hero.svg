@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
   <title id="title">Jianquan Lu - positioning, navigation, and open source</title>
-  <desc id="desc">A technical profile header showing satellite observations converging through GNSS, LiDAR, IMU, and camera sensors into a reliable position solution.</desc>
+  <desc id="desc">A calm pixel signal field spells GNSS and FIX beside a profile for precise positioning and multi-sensor navigation research.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
       <stop stop-color="#0B1015"/>
@@ -9,7 +9,15 @@
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" fill="none" stroke="#B9C4C9" stroke-opacity=".08"/>
     </pattern>
+    <pattern id="panel-dots" width="15" height="15" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#52646C" fill-opacity=".2"/>
+    </pattern>
     <clipPath id="frame"><rect width="1200" height="420" rx="22"/></clipPath>
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        .pixel-motion { display: none; }
+      }
+    </style>
   </defs>
   <g clip-path="url(#frame)">
     <rect width="1200" height="420" fill="url(#sky)"/>
@@ -17,57 +25,322 @@
     <path d="M0 338C160 320 253 351 405 334C564 316 711 289 873 304C1018 317 1110 299 1200 270V420H0Z" fill="#10171D"/>
     <path d="M0 338C160 320 253 351 405 334C564 316 711 289 873 304C1018 317 1110 299 1200 270" fill="none" stroke="#65D7D1" stroke-opacity=".45"/>
 
-    <g id="animated-content">
-      <g transform="translate(64 56)">
-        <text id="profile-kicker" x="0" y="0" fill="#65D7D1" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="15" letter-spacing="2">PROFILE / 30.52 N 114.31 E</text>
-        <text id="profile-name" x="0" y="78" fill="#F4F7F7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="62" font-weight="750">JIANQUAN LU</text>
-        <text id="profile-tagline" x="2" y="124" fill="#B9C4C9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23">Reliable positioning from complex observations.</text>
-        <g transform="translate(2 170)" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">
-          <g class="sensor-chip"><rect width="104" height="30" rx="4" fill="#65D7D1"/><text x="15" y="20" fill="#0B1015" font-weight="700">GNSS / PPP</text></g>
-          <g class="sensor-chip"><rect x="114" width="96" height="30" rx="4" fill="#202B33"/><text x="130" y="20" fill="#F5C96A">LiDAR</text></g>
-          <g class="sensor-chip"><rect x="220" width="76" height="30" rx="4" fill="#202B33"/><text x="238" y="20" fill="#F5C96A">IMU</text></g>
-          <g class="sensor-chip"><rect x="306" width="102" height="30" rx="4" fill="#202B33"/><text x="321" y="20" fill="#EF6A5B">CAMERA</text></g>
-        </g>
-        <text x="2" y="260" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13">WUHAN UNIVERSITY  /  RESEARCH + ENGINEERING  /  OPEN SOURCE</text>
+    <g transform="translate(64 56)">
+      <text x="0" y="0" fill="#65D7D1" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="15" letter-spacing="2">PROFILE / 30.52 N 114.31 E</text>
+      <text x="0" y="78" fill="#F4F7F7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="62" font-weight="750">JIANQUAN LU</text>
+      <text x="2" y="124" fill="#B9C4C9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23">Reliable positioning from complex observations.</text>
+      <g transform="translate(2 170)" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">
+        <rect width="104" height="30" rx="4" fill="#65D7D1"/><text x="15" y="20" fill="#0B1015" font-weight="700">GNSS / PPP</text>
+        <rect x="114" width="96" height="30" rx="4" fill="#202B33"/><text x="130" y="20" fill="#F5C96A">LiDAR</text>
+        <rect x="220" width="76" height="30" rx="4" fill="#202B33"/><text x="238" y="20" fill="#F5C96A">IMU</text>
+        <rect x="306" width="102" height="30" rx="4" fill="#202B33"/><text x="321" y="20" fill="#EF6A5B">CAMERA</text>
       </g>
+      <text x="2" y="260" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13">WUHAN UNIVERSITY  /  RESEARCH + ENGINEERING  /  OPEN SOURCE</text>
+    </g>
 
-      <g id="observation-panel" transform="translate(732 46)">
-        <rect x="0" y="0" width="404" height="320" rx="14" fill="#10171D" stroke="#33434B"/>
-        <text x="24" y="34" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="1">OBSERVATION TO SOLUTION</text>
-
-        <g id="observation-dynamic">
-        <g fill="none" stroke="#65D7D1" stroke-width="1.5">
-          <path class="observation-route" d="M74 78L139 143"/>
-          <path class="observation-route" d="M201 62L181 143"/>
-          <path class="observation-route" d="M322 92L223 147"/>
-        </g>
-        <g fill="#0B1015" stroke="#65D7D1" stroke-width="2">
-          <path class="satellite" d="M58 70l16-12 16 12-16 12z"/>
-          <path class="satellite" d="M185 54l16-12 16 12-16 12z"/>
-          <path class="satellite" d="M306 84l16-12 16 12-16 12z"/>
-        </g>
-        <g id="satellite-labels" fill="#65D7D1" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10">
-          <text x="48" y="99">G07</text><text x="188" y="83">C56</text><text x="309" y="113">E19</text>
-        </g>
-
-        <g id="estimator" transform="translate(111 132)">
-          <rect width="180" height="94" rx="8" fill="#182229" stroke="#52646C"/>
-          <circle cx="38" cy="34" r="12" fill="none" stroke="#F5C96A"/><path d="M38 18V50M22 34H54" stroke="#F5C96A"/>
-          <text x="68" y="30" fill="#F4F7F7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">MULTI-SENSOR</text>
-          <text x="68" y="49" fill="#F4F7F7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">ESTIMATOR</text>
-          <path d="M20 71H160" stroke="#33434B"/>
-          <circle class="estimator-state" cx="36" cy="71" r="4" fill="#65D7D1"/>
-          <circle class="estimator-state" cx="84" cy="71" r="4" fill="#F5C96A"/>
-          <circle class="estimator-state" cx="132" cy="71" r="4" fill="#EF6A5B"/>
-        </g>
-
-        <path id="solution-link" d="M201 226V255" stroke="#EF6A5B" stroke-width="2"/>
-        <g id="solution" transform="translate(73 255)">
-          <rect width="258" height="42" rx="6" fill="#EF6A5B"/>
-          <text id="solution-text" x="20" y="27" fill="#0B1015" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" font-weight="700">FIXED  30.5200 / 114.3100</text>
-        </g>
-        </g>
+    <g>
+      <rect x="732" y="46" width="404" height="320" rx="14" fill="#10171D" stroke="#33434B"/>
+      <rect x="732" y="46" width="404" height="320" rx="14" fill="url(#panel-dots)"/>
+      <text x="756" y="78" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="1">LIVE / MULTI-SENSOR SIGNAL FIELD</text>
+      <circle cx="1107" cy="74" r="4" fill="#65D7D1" opacity=".8">
+        <animate class="pixel-motion" attributeName="opacity" values=".8;.45;.8" dur="4.8s" repeatCount="indefinite"/>
+      </circle>
+      <g aria-label="GNSS pixel matrix">
+          <rect x="770" y="102" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.41;0.63;0.81" keyTimes="0;0.34;0.68;1" dur="5.7s" begin="-4.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="785" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.82">
+          </rect>
+          <rect x="800" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.79">
+            <animate class="pixel-motion" attributeName="opacity" values="0.79;0.53;0.71;0.79" keyTimes="0;0.34;0.68;1" dur="5.5s" begin="-2.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="815" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.8">
+            <animate class="pixel-motion" attributeName="opacity" values="0.8;0.56;0.67;0.8" keyTimes="0;0.34;0.68;1" dur="5.6s" begin="-1.3s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="770" y="117" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.8">
+          </rect>
+          <rect x="770" y="132" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.93">
+            <animate class="pixel-motion" attributeName="opacity" values="0.93;0.57;0.73;0.93" keyTimes="0;0.34;0.68;1" dur="4.7s" begin="-4.1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="770" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.8">
+            <animate class="pixel-motion" attributeName="opacity" values="0.8;0.54;0.75;0.8" keyTimes="0;0.34;0.68;1" dur="5.8s" begin="-2.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="800" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.82">
+          </rect>
+          <rect x="815" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.57;0.7;0.81" keyTimes="0;0.34;0.68;1" dur="3.2s" begin="-1.1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="830" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.76">
+            <animate class="pixel-motion" attributeName="opacity" values="0.76;0.4;0.74;0.76" keyTimes="0;0.34;0.68;1" dur="5.4s" begin="-4.1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="770" y="162" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.89">
+            <animate class="pixel-motion" attributeName="opacity" values="0.89;0.45;0.62;0.89" keyTimes="0;0.34;0.68;1" dur="5.3s" begin="-3.4s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="830" y="162" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.93">
+            <animate class="pixel-motion" attributeName="opacity" values="0.93;0.41;0.63;0.93" keyTimes="0;0.34;0.68;1" dur="5.7s" begin="-2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="770" y="177" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.9">
+          </rect>
+          <rect x="830" y="177" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.86">
+          </rect>
+          <rect x="770" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.87">
+            <animate class="pixel-motion" attributeName="opacity" values="0.87;0.51;0.72;0.87" keyTimes="0;0.34;0.68;1" dur="4.3s" begin="-0.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="785" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.88">
+            <animate class="pixel-motion" attributeName="opacity" values="0.88;0.54;0.68;0.88" keyTimes="0;0.34;0.68;1" dur="4.4s" begin="-3.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="800" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.89">
+            <animate class="pixel-motion" attributeName="opacity" values="0.89;0.57;0.63;0.89" keyTimes="0;0.34;0.68;1" dur="4.4s" begin="-2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="815" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.9">
+          </rect>
+          <rect x="860" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.76">
+          </rect>
+          <rect x="920" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.9">
+          </rect>
+          <rect x="860" y="117" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.83">
+            <animate class="pixel-motion" attributeName="opacity" values="0.83;0.49;0.75;0.83" keyTimes="0;0.34;0.68;1" dur="4.3s" begin="-0.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="875" y="117" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.84">
+          </rect>
+          <rect x="920" y="117" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.87">
+            <animate class="pixel-motion" attributeName="opacity" values="0.87;0.44;0.75;0.87" keyTimes="0;0.34;0.68;1" dur="4.7s" begin="-4.5s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="860" y="132" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.88">
+            <animate class="pixel-motion" attributeName="opacity" values="0.88;0.46;0.62;0.88" keyTimes="0;0.34;0.68;1" dur="4.1s" begin="-2.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="890" y="132" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.9">
+          </rect>
+          <rect x="920" y="132" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.92">
+            <animate class="pixel-motion" attributeName="opacity" values="0.92;0.42;0.63;0.92" keyTimes="0;0.34;0.68;1" dur="4.4s" begin="-1.5s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="860" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.85">
+            <animate class="pixel-motion" attributeName="opacity" values="0.85;0.44;0.71;0.85" keyTimes="0;0.34;0.68;1" dur="3.4s" begin="-3.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="905" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.88">
+          </rect>
+          <rect x="920" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.49;0.7;0.81" keyTimes="0;0.34;0.68;1" dur="5.7s" begin="-0.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="860" y="162" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.9">
+          </rect>
+          <rect x="920" y="162" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.76">
+          </rect>
+          <rect x="860" y="177" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.87">
+            <animate class="pixel-motion" attributeName="opacity" values="0.87;0.42;0.7;0.87" keyTimes="0;0.34;0.68;1" dur="3.8s" begin="-4.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="920" y="177" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.83">
+            <animate class="pixel-motion" attributeName="opacity" values="0.83;0.46;0.7;0.83" keyTimes="0;0.34;0.68;1" dur="3.4s" begin="-1.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="860" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.84">
+            <animate class="pixel-motion" attributeName="opacity" values="0.84;0.41;0.72;0.84" keyTimes="0;0.34;0.68;1" dur="3.4s" begin="-3.3s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="920" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.8">
+            <animate class="pixel-motion" attributeName="opacity" values="0.8;0.46;0.72;0.8" keyTimes="0;0.34;0.68;1" dur="5.7s" begin="-4.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="965" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.78">
+            <animate class="pixel-motion" attributeName="opacity" values="0.78;0.43;0.7;0.78" keyTimes="0;0.34;0.68;1" dur="5s" begin="-0.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="980" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.79">
+            <animate class="pixel-motion" attributeName="opacity" values="0.79;0.46;0.66;0.79" keyTimes="0;0.34;0.68;1" dur="5.1s" begin="-3.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="995" y="102" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.8">
+          </rect>
+          <rect x="1010" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.44;0.74;0.91" keyTimes="0;0.34;0.68;1" dur="4.5s" begin="-3.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="950" y="117" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.8">
+            <animate class="pixel-motion" attributeName="opacity" values="0.8;0.41;0.66;0.8" keyTimes="0;0.34;0.68;1" dur="5.5s" begin="-0.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="950" y="132" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.83">
+            <animate class="pixel-motion" attributeName="opacity" values="0.83;0.42;0.64;0.83" keyTimes="0;0.34;0.68;1" dur="3.2s" begin="-2.3s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="965" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.57;0.72;0.81" keyTimes="0;0.34;0.68;1" dur="4.1s" begin="-2.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="980" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.8">
+            <animate class="pixel-motion" attributeName="opacity" values="0.8;0.54;0.76;0.8" keyTimes="0;0.34;0.68;1" dur="4s" begin="-3.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="995" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.79">
+            <animate class="pixel-motion" attributeName="opacity" values="0.79;0.5;0.62;0.79" keyTimes="0;0.34;0.68;1" dur="3.9s" begin="-0.4s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1010" y="162" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.5;0.75;0.91" keyTimes="0;0.34;0.68;1" dur="5.7s" begin="-1.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1010" y="177" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.8">
+            <animate class="pixel-motion" attributeName="opacity" values="0.8;0.57;0.79;0.8" keyTimes="0;0.34;0.68;1" dur="4.7s" begin="-1.1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="950" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.89">
+            <animate class="pixel-motion" attributeName="opacity" values="0.89;0.48;0.65;0.89" keyTimes="0;0.34;0.68;1" dur="3.7s" begin="-1.3s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="965" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.9">
+          </rect>
+          <rect x="980" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.87">
+            <animate class="pixel-motion" attributeName="opacity" values="0.87;0.42;0.74;0.87" keyTimes="0;0.34;0.68;1" dur="3.5s" begin="-4.5s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="995" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.88">
+            <animate class="pixel-motion" attributeName="opacity" values="0.88;0.45;0.7;0.88" keyTimes="0;0.34;0.68;1" dur="3.6s" begin="-2.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1055" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.89">
+            <animate class="pixel-motion" attributeName="opacity" values="0.89;0.5;0.7;0.89" keyTimes="0;0.34;0.68;1" dur="3.5s" begin="-0.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1070" y="102" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.92">
+          </rect>
+          <rect x="1085" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.57;0.79;0.91" keyTimes="0;0.34;0.68;1" dur="3.7s" begin="-2.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1100" y="102" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.86">
+            <animate class="pixel-motion" attributeName="opacity" values="0.86;0.4;0.65;0.86" keyTimes="0;0.34;0.68;1" dur="3.2s" begin="-0.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1040" y="117" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.87">
+            <animate class="pixel-motion" attributeName="opacity" values="0.87;0.52;0.74;0.87" keyTimes="0;0.34;0.68;1" dur="5.7s" begin="-0.3s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1040" y="132" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.82">
+          </rect>
+          <rect x="1055" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.8">
+          </rect>
+          <rect x="1070" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.77">
+            <animate class="pixel-motion" attributeName="opacity" values="0.77;0.55;0.7;0.77" keyTimes="0;0.34;0.68;1" dur="5.2s" begin="-3.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1085" y="147" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.78">
+            <animate class="pixel-motion" attributeName="opacity" values="0.78;0.41;0.66;0.78" keyTimes="0;0.34;0.68;1" dur="5.3s" begin="-2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1100" y="162" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.84">
+            <animate class="pixel-motion" attributeName="opacity" values="0.84;0.44;0.72;0.84" keyTimes="0;0.34;0.68;1" dur="3.4s" begin="-2.1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1100" y="177" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.51;0.62;0.91" keyTimes="0;0.34;0.68;1" dur="4.6s" begin="-0.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1040" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.86">
+          </rect>
+          <rect x="1055" y="192" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.85">
+            <animate class="pixel-motion" attributeName="opacity" values="0.85;0.54;0.68;0.85" keyTimes="0;0.34;0.68;1" dur="4.1s" begin="-0.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1070" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.84">
+            <animate class="pixel-motion" attributeName="opacity" values="0.84;0.5;0.72;0.84" keyTimes="0;0.34;0.68;1" dur="4s" begin="-2.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1085" y="192" width="10" height="10" rx="2.5" fill="#65D7D1" opacity="0.83">
+            <animate class="pixel-motion" attributeName="opacity" values="0.83;0.47;0.76;0.83" keyTimes="0;0.34;0.68;1" dur="3.9s" begin="-3.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
       </g>
+      <path d="M770 198H1098" stroke="#33434B" stroke-dasharray="3 6"/>
+      <g aria-label="FIX pixel matrix">
+          <rect x="812" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.93">
+            <animate class="pixel-motion" attributeName="opacity" values="0.93;0.5;0.69;0.93" keyTimes="0;0.34;0.68;1" dur="4.5s" begin="-3.4s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="827" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.76">
+            <animate class="pixel-motion" attributeName="opacity" values="0.76;0.54;0.64;0.76" keyTimes="0;0.34;0.68;1" dur="4.6s" begin="-1.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="842" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.77">
+            <animate class="pixel-motion" attributeName="opacity" values="0.77;0.57;0.78;0.77" keyTimes="0;0.34;0.68;1" dur="4.7s" begin="-0.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="857" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.78">
+          </rect>
+          <rect x="872" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.79">
+            <animate class="pixel-motion" attributeName="opacity" values="0.79;0.46;0.69;0.79" keyTimes="0;0.34;0.68;1" dur="4.9s" begin="-2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="812" y="235" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.76">
+            <animate class="pixel-motion" attributeName="opacity" values="0.76;0.48;0.7;0.76" keyTimes="0;0.34;0.68;1" dur="3.8s" begin="-1.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="812" y="250" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.55;0.79;0.91" keyTimes="0;0.34;0.68;1" dur="4.2s" begin="-1.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="812" y="265" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.84">
+          </rect>
+          <rect x="827" y="265" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.83">
+            <animate class="pixel-motion" attributeName="opacity" values="0.83;0.49;0.67;0.83" keyTimes="0;0.34;0.68;1" dur="3.8s" begin="-4s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="842" y="265" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.82">
+            <animate class="pixel-motion" attributeName="opacity" values="0.82;0.45;0.72;0.82" keyTimes="0;0.34;0.68;1" dur="3.7s" begin="-0.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="857" y="265" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.42;0.76;0.81" keyTimes="0;0.34;0.68;1" dur="3.6s" begin="-2.2s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="812" y="280" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.85">
+            <animate class="pixel-motion" attributeName="opacity" values="0.85;0.49;0.7;0.85" keyTimes="0;0.34;0.68;1" dur="5.7s" begin="-2.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="812" y="295" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.86">
+            <animate class="pixel-motion" attributeName="opacity" values="0.86;0.47;0.71;0.86" keyTimes="0;0.34;0.68;1" dur="5s" begin="-0.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="812" y="310" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.77">
+            <animate class="pixel-motion" attributeName="opacity" values="0.77;0.41;0.68;0.77" keyTimes="0;0.34;0.68;1" dur="3.8s" begin="-4s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="902" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.92">
+            <animate class="pixel-motion" attributeName="opacity" values="0.92;0.54;0.64;0.92" keyTimes="0;0.34;0.68;1" dur="4.2s" begin="-3.1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="917" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.51;0.69;0.91" keyTimes="0;0.34;0.68;1" dur="4.1s" begin="-4.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="932" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.76">
+          </rect>
+          <rect x="947" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.93">
+            <animate class="pixel-motion" attributeName="opacity" values="0.93;0.57;0.78;0.93" keyTimes="0;0.34;0.68;1" dur="4.3s" begin="-1.5s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="962" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.78">
+            <animate class="pixel-motion" attributeName="opacity" values="0.78;0.5;0.65;0.78" keyTimes="0;0.34;0.68;1" dur="4.6s" begin="-1.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="932" y="235" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.41;0.64;0.91" keyTimes="0;0.34;0.68;1" dur="3.8s" begin="-0.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="932" y="250" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.78">
+            <animate class="pixel-motion" attributeName="opacity" values="0.78;0.56;0.64;0.78" keyTimes="0;0.34;0.68;1" dur="5.2s" begin="-1.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="932" y="265" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.42;0.69;0.81" keyTimes="0;0.34;0.68;1" dur="5.5s" begin="-4.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="932" y="280" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.86">
+          </rect>
+          <rect x="932" y="295" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.83">
+            <animate class="pixel-motion" attributeName="opacity" values="0.83;0.46;0.76;0.83" keyTimes="0;0.34;0.68;1" dur="4.4s" begin="-1.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="902" y="310" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.76">
+          </rect>
+          <rect x="917" y="310" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.93">
+            <animate class="pixel-motion" attributeName="opacity" values="0.93;0.46;0.76;0.93" keyTimes="0;0.34;0.68;1" dur="4.4s" begin="-1.1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="932" y="310" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.92">
+            <animate class="pixel-motion" attributeName="opacity" values="0.92;0.43;0.63;0.92" keyTimes="0;0.34;0.68;1" dur="4.3s" begin="-2.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="947" y="310" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.57;0.67;0.91" keyTimes="0;0.34;0.68;1" dur="4.2s" begin="-4.3s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="962" y="310" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.8">
+          </rect>
+          <rect x="992" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.87">
+            <animate class="pixel-motion" attributeName="opacity" values="0.87;0.41;0.65;0.87" keyTimes="0;0.34;0.68;1" dur="3.2s" begin="-0.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1052" y="220" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.77">
+            <animate class="pixel-motion" attributeName="opacity" values="0.77;0.45;0.64;0.77" keyTimes="0;0.34;0.68;1" dur="5s" begin="-3.8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1007" y="235" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.5;0.67;0.91" keyTimes="0;0.34;0.68;1" dur="4.6s" begin="-0.3s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1037" y="235" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.89">
+            <animate class="pixel-motion" attributeName="opacity" values="0.89;0.43;0.76;0.89" keyTimes="0;0.34;0.68;1" dur="4.4s" begin="-3.5s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1022" y="250" width="10" height="10" rx="2.5" fill="#F5C96A" opacity="0.91">
+            <animate class="pixel-motion" attributeName="opacity" values="0.91;0.43;0.64;0.91" keyTimes="0;0.34;0.68;1" dur="3.7s" begin="-3.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1022" y="265" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.76">
+          </rect>
+          <rect x="1022" y="280" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.57;0.73;0.81" keyTimes="0;0.34;0.68;1" dur="4.8s" begin="-4.7s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1007" y="295" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.51;0.65;0.81" keyTimes="0;0.34;0.68;1" dur="3.4s" begin="-0.9s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1037" y="295" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.79">
+            <animate class="pixel-motion" attributeName="opacity" values="0.79;0.45;0.74;0.79" keyTimes="0;0.34;0.68;1" dur="3.2s" begin="-4.1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="992" y="310" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.77">
+            <animate class="pixel-motion" attributeName="opacity" values="0.77;0.43;0.75;0.77" keyTimes="0;0.34;0.68;1" dur="3.9s" begin="-1s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+          <rect x="1052" y="310" width="10" height="10" rx="2.5" fill="#EF6A5B" opacity="0.81">
+            <animate class="pixel-motion" attributeName="opacity" values="0.81;0.57;0.75;0.81" keyTimes="0;0.34;0.68;1" dur="4.3s" begin="-4.6s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1;.4 0 .6 1;.4 0 .6 1"/>
+          </rect>
+      </g>
+      <text x="756" y="344" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11">FIXED / 30.5200 N / 114.3100 E</text>
+      <text x="1112" y="344" fill="#F5C96A" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="11" text-anchor="end">105 PX</text>
     </g>
   </g>
 </svg>
