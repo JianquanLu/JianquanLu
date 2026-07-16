@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-  <title id="title">Jianquan Lu — positioning, navigation, and open source</title>
+  <title id="title">Jianquan Lu - positioning, navigation, and open source</title>
   <desc id="desc">A technical profile header showing satellite observations converging through GNSS, LiDAR, IMU, and camera sensors into a reliable position solution.</desc>
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
@@ -17,46 +17,56 @@
     <path d="M0 338C160 320 253 351 405 334C564 316 711 289 873 304C1018 317 1110 299 1200 270V420H0Z" fill="#10171D"/>
     <path d="M0 338C160 320 253 351 405 334C564 316 711 289 873 304C1018 317 1110 299 1200 270" fill="none" stroke="#65D7D1" stroke-opacity=".45"/>
 
-    <g transform="translate(64 56)">
-      <text x="0" y="0" fill="#65D7D1" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="15" letter-spacing="2">PROFILE / 30.52°N 114.31°E</text>
-      <text x="0" y="78" fill="#F4F7F7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="62" font-weight="750">JIANQUAN LU</text>
-      <text x="2" y="124" fill="#B9C4C9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23">Reliable positioning from complex observations.</text>
-      <g transform="translate(2 170)" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">
-        <rect width="104" height="30" rx="4" fill="#65D7D1"/><text x="15" y="20" fill="#0B1015" font-weight="700">GNSS / PPP</text>
-        <rect x="114" width="96" height="30" rx="4" fill="#202B33"/><text x="130" y="20" fill="#F5C96A">LiDAR</text>
-        <rect x="220" width="76" height="30" rx="4" fill="#202B33"/><text x="238" y="20" fill="#F5C96A">IMU</text>
-        <rect x="306" width="102" height="30" rx="4" fill="#202B33"/><text x="321" y="20" fill="#EF6A5B">CAMERA</text>
-      </g>
-      <text x="2" y="260" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13">WUHAN UNIVERSITY  ·  RESEARCH + ENGINEERING  ·  OPEN SOURCE</text>
-    </g>
-
-    <g transform="translate(732 46)">
-      <rect x="0" y="0" width="404" height="320" rx="14" fill="#10171D" stroke="#33434B"/>
-      <text x="24" y="34" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="1">OBSERVATION → SOLUTION</text>
-
-      <g fill="none" stroke="#65D7D1" stroke-width="1.5">
-        <path d="M74 78L139 143"/><path d="M201 62L181 143"/><path d="M322 92L223 147"/>
-      </g>
-      <g fill="#0B1015" stroke="#65D7D1" stroke-width="2">
-        <path d="M58 70l16-12 16 12-16 12z"/><path d="M185 54l16-12 16 12-16 12z"/><path d="M306 84l16-12 16 12-16 12z"/>
-      </g>
-      <g fill="#65D7D1" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10">
-        <text x="48" y="99">G07</text><text x="188" y="83">C56</text><text x="309" y="113">E19</text>
+    <g id="animated-content">
+      <g transform="translate(64 56)">
+        <text id="profile-kicker" x="0" y="0" fill="#65D7D1" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="15" letter-spacing="2">PROFILE / 30.52 N 114.31 E</text>
+        <text id="profile-name" x="0" y="78" fill="#F4F7F7" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="62" font-weight="750">JIANQUAN LU</text>
+        <text id="profile-tagline" x="2" y="124" fill="#B9C4C9" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="23">Reliable positioning from complex observations.</text>
+        <g transform="translate(2 170)" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">
+          <g class="sensor-chip"><rect width="104" height="30" rx="4" fill="#65D7D1"/><text x="15" y="20" fill="#0B1015" font-weight="700">GNSS / PPP</text></g>
+          <g class="sensor-chip"><rect x="114" width="96" height="30" rx="4" fill="#202B33"/><text x="130" y="20" fill="#F5C96A">LiDAR</text></g>
+          <g class="sensor-chip"><rect x="220" width="76" height="30" rx="4" fill="#202B33"/><text x="238" y="20" fill="#F5C96A">IMU</text></g>
+          <g class="sensor-chip"><rect x="306" width="102" height="30" rx="4" fill="#202B33"/><text x="321" y="20" fill="#EF6A5B">CAMERA</text></g>
+        </g>
+        <text x="2" y="260" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13">WUHAN UNIVERSITY  /  RESEARCH + ENGINEERING  /  OPEN SOURCE</text>
       </g>
 
-      <g transform="translate(111 132)">
-        <rect width="180" height="94" rx="8" fill="#182229" stroke="#52646C"/>
-        <circle cx="38" cy="34" r="12" fill="none" stroke="#F5C96A"/><path d="M38 18V50M22 34H54" stroke="#F5C96A"/>
-        <text x="68" y="30" fill="#F4F7F7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">MULTI-SENSOR</text>
-        <text x="68" y="49" fill="#F4F7F7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">ESTIMATOR</text>
-        <path d="M20 71H160" stroke="#33434B"/>
-        <circle cx="36" cy="71" r="4" fill="#65D7D1"/><circle cx="84" cy="71" r="4" fill="#F5C96A"/><circle cx="132" cy="71" r="4" fill="#EF6A5B"/>
-      </g>
+      <g id="observation-panel" transform="translate(732 46)">
+        <rect x="0" y="0" width="404" height="320" rx="14" fill="#10171D" stroke="#33434B"/>
+        <text x="24" y="34" fill="#77858C" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="1">OBSERVATION TO SOLUTION</text>
 
-      <path d="M201 226V255" stroke="#EF6A5B" stroke-width="2"/>
-      <g transform="translate(73 255)">
-        <rect width="258" height="42" rx="6" fill="#EF6A5B"/>
-        <text x="20" y="27" fill="#0B1015" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" font-weight="700">FIXED  30.5200 / 114.3100</text>
+        <g id="observation-dynamic">
+        <g fill="none" stroke="#65D7D1" stroke-width="1.5">
+          <path class="observation-route" d="M74 78L139 143"/>
+          <path class="observation-route" d="M201 62L181 143"/>
+          <path class="observation-route" d="M322 92L223 147"/>
+        </g>
+        <g fill="#0B1015" stroke="#65D7D1" stroke-width="2">
+          <path class="satellite" d="M58 70l16-12 16 12-16 12z"/>
+          <path class="satellite" d="M185 54l16-12 16 12-16 12z"/>
+          <path class="satellite" d="M306 84l16-12 16 12-16 12z"/>
+        </g>
+        <g id="satellite-labels" fill="#65D7D1" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10">
+          <text x="48" y="99">G07</text><text x="188" y="83">C56</text><text x="309" y="113">E19</text>
+        </g>
+
+        <g id="estimator" transform="translate(111 132)">
+          <rect width="180" height="94" rx="8" fill="#182229" stroke="#52646C"/>
+          <circle cx="38" cy="34" r="12" fill="none" stroke="#F5C96A"/><path d="M38 18V50M22 34H54" stroke="#F5C96A"/>
+          <text x="68" y="30" fill="#F4F7F7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">MULTI-SENSOR</text>
+          <text x="68" y="49" fill="#F4F7F7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12">ESTIMATOR</text>
+          <path d="M20 71H160" stroke="#33434B"/>
+          <circle class="estimator-state" cx="36" cy="71" r="4" fill="#65D7D1"/>
+          <circle class="estimator-state" cx="84" cy="71" r="4" fill="#F5C96A"/>
+          <circle class="estimator-state" cx="132" cy="71" r="4" fill="#EF6A5B"/>
+        </g>
+
+        <path id="solution-link" d="M201 226V255" stroke="#EF6A5B" stroke-width="2"/>
+        <g id="solution" transform="translate(73 255)">
+          <rect width="258" height="42" rx="6" fill="#EF6A5B"/>
+          <text id="solution-text" x="20" y="27" fill="#0B1015" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" font-weight="700">FIXED  30.5200 / 114.3100</text>
+        </g>
+        </g>
       </g>
     </g>
   </g>

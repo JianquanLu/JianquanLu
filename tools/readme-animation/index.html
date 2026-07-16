@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <title>Jianquan Lu profile hero animation</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { margin: 0; min-height: 100%; background: #0b1015; }
+      body { display: grid; place-items: center; }
+      #stage { width: 1200px; height: 420px; overflow: hidden; }
+      #stage > svg { display: block; width: 1200px; height: 420px; }
+    </style>
+  </head>
+  <body>
+    <main id="stage" aria-label="Animated positioning and navigation profile header"></main>
+    <script type="module">
+      import { createTimeline, stagger, svg, utils } from './node_modules/animejs/dist/modules/index.js';
+
+      const stage = document.querySelector('#stage');
+      const hero = await fetch('../../assets/readme/hero.svg').then((response) => response.text());
+      stage.innerHTML = hero;
+
+      const ns = 'http://www.w3.org/2000/svg';
+      const observationDynamic = stage.querySelector('#observation-dynamic');
+      const routes = [...stage.querySelectorAll('.observation-route')];
+      const particles = routes.map((route, index) => {
+        const particle = document.createElementNS(ns, 'circle');
+        particle.setAttribute('r', '4');
+        particle.setAttribute('fill', ['#65D7D1', '#F5C96A', '#EF6A5B'][index]);
+        particle.setAttribute('class', `signal-particle signal-particle-${index}`);
+        observationDynamic.appendChild(particle);
+        return particle;
+      });
+
+      const timeline = createTimeline({ autoplay: false, defaults: { ease: 'outCubic' } });
+      const drawableRoutes = svg.createDrawable('.observation-route');
+      utils.set('.satellite, #satellite-labels, #estimator, .estimator-state, #solution-link, #solution, .signal-particle', { opacity: 0 });
+      utils.set(drawableRoutes, { draw: '0 0' });
+
+      timeline
+        .add('.satellite', { opacity: [0, 1], duration: 500, delay: stagger(140) }, 350)
+        .add('#satellite-labels', { opacity: [0, 1], duration: 500 }, 500)
+        .add(drawableRoutes, { draw: ['0 0', '0 1'], duration: 850, delay: stagger(140) }, 600);
+
+      particles.forEach((particle, index) => {
+        timeline.add(particle, {
+          opacity: [0, 1, 1, 0],
+          duration: 900,
+          ...svg.createMotionPath(routes[index])
+        }, 700 + index * 140);
+      });
+
+      timeline
+        .add('#estimator', { opacity: [0, 1], duration: 620 }, 1100)
+        .add('.estimator-state', { scale: [0, 1], opacity: [0, 1], duration: 400, delay: stagger(110) }, 1350)
+        .add('#solution-link', { opacity: [0, 1], scaleY: [0, 1], duration: 420 }, 1600)
+        .add('#solution', { opacity: [0, 1], duration: 620 }, 1750)
+        .add('#solution-text', { opacity: [0.2, 1], duration: 420 }, 1900)
+        .add('#observation-dynamic', { opacity: [1, 1], duration: 1900 }, 2350)
+        .add('#observation-dynamic', { opacity: [1, 0], duration: 700, ease: 'inCubic' }, 4250);
+
+      const duration = 5000;
+      timeline.seek(0);
+
+      window.animationReady = true;
+      window.animationDuration = duration;
+      window.renderFrame = async (time) => {
+        timeline.seek(Math.max(1, Math.min(time, duration)));
+        await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+      };
+    </script>
+  </body>
+</html>
