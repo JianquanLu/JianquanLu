@@ -1,62 +1,66 @@
-<div align="center">
-
-<img src="./assets/banner.svg" alt="Jianquan Lu profile banner" width="100%" />
-
-<h1>Hi, I'm Jianquan Lu</h1>
-
-<p>
-  <a href="https://github.com/JianquanLu"><img src="https://img.shields.io/badge/GitHub-JianquanLu-181717?style=flat-square&logo=github" alt="GitHub" /></a>
-  <a href="mailto:xantheday663@gmail.com"><img src="https://img.shields.io/badge/Email-contact-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
-  <a href="https://scholar.google.com/"><img src="https://img.shields.io/badge/Research-GNSS%20%26%20Navigation-4969ed?style=flat-square" alt="Research" /></a>
+<p align="center">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Jianquan Lu builds reliable positioning and navigation systems from GNSS and multi-sensor observations">
 </p>
 
-</div>
+<p align="center">
+  <a href="mailto:xantheday663@gmail.com"><img src="https://img.shields.io/badge/EMAIL-xantheday663%40gmail.com-EF6A5B?style=flat-square&labelColor=111820" alt="Email Jianquan Lu"></a>
+  <a href="https://github.com/JianquanLu?tab=repositories"><img src="https://img.shields.io/badge/WORK-PUBLIC_REPOSITORIES-65D7D1?style=flat-square&labelColor=111820" alt="Browse public repositories"></a>
+  <img src="https://img.shields.io/badge/BASE-WUHAN%2C_CHINA-F5C96A?style=flat-square&labelColor=111820" alt="Based in Wuhan, China">
+</p>
 
-## About me
+I am **Jianquan Lu**, a researcher and software engineer at **Wuhan University**. I work on precise positioning and navigation systems that combine GNSS, LiDAR, IMU, and camera observations, with a focus on robust state estimation and reproducible engineering.
 
-I am a researcher and software engineer at **Wuhan University**, working on satellite navigation, precise positioning, multi-sensor fusion, and reliable geospatial software.
+## Open-source contributions
 
-My current work brings together GNSS, LiDAR, IMU, and camera observations to build robust positioning and navigation systems. I enjoy turning research ideas into tools that are clear, reproducible, and useful in practice.
+<p align="center">
+  <img src="./assets/readme/community.svg" width="100%" alt="Jianquan Lu's upstream contributions to GREAT-PVT and improvements built on the yuni-tab fork">
+</p>
+
+### GREAT-PVT · upstream pull requests
+
+I am contributing fixes back to [`GREAT-WHU/GREAT-PVT`](https://github.com/GREAT-WHU/GREAT-PVT), the precision positioning and navigation software maintained by the GREAT Group at Wuhan University.
+
+- [`#7 Restore default GNSS band and frequency mappings`](https://github.com/GREAT-WHU/GREAT-PVT/pull/7) removes an unreachable-default failure, restores per-constellation defaults, and fixes QZSS switch fall-through. Verified with MSVC Release builds and one-epoch PPP runs.
+- [`#8 Handle missing satellite objects and extend BDS satellite identifiers`](https://github.com/GREAT-WHU/GREAT-PVT/pull/8) adds current BDS PRNs through C63 and prevents missing satellite objects from causing a null-pointer crash. Verified against nine previously failing observation datasets.
+
+Both pull requests are currently **open for upstream review**.
+
+### YuNi Tab · useful changes on a fork
+
+My [`JianquanLu/yuni-tab`](https://github.com/JianquanLu/yuni-tab) fork is currently **1 commit ahead** of [`ziyangcheng001-hue/yuni-tab`](https://github.com/ziyangcheng001-hue/yuni-tab). The fork:
+
+- switches search and suggestions from Bing to Google;
+- replaces the fragile wallpaper upload trigger with a native file-label interaction;
+- adds explicit fallback and error handling when IndexedDB or wallpaper import fails.
+
+## Research coordinates
 
 ```text
-Research  |  GNSS / INS  ·  LiDAR-IMU  ·  Sensor Fusion  ·  State Estimation
-Build     |  C++  ·  Python  ·  MATLAB  ·  JavaScript  ·  Chrome Extensions
-Based in  |  Wuhan, China
+POSITIONING    GNSS / PPP / precise navigation
+FUSION         LiDAR + IMU + camera observations
+ESTIMATION     robust state estimation and calibration
+ENGINEERING    C++ / Python / MATLAB / reproducible validation
 ```
 
-## Featured work
+## Public work
 
-| Project | What it is |
-| --- | --- |
-| [GREAT-PVT](https://github.com/JianquanLu/GREAT-PVT) | Precision positioning and navigation software from the GREAT Group at Wuhan University. |
-| [YuNi Tab](https://github.com/JianquanLu/yuni-tab) | A liquid-glass new-tab extension with rotating glow borders, video wallpapers, and Bing suggestions. |
-| [LiDAR-IMU](https://github.com/JianquanLu/LiDAR-IMU) | Experiments and tools for LiDAR-IMU integrated navigation. |
+| Repository | Role | Current focus |
+| --- | --- | --- |
+| [`GREAT-PVT`](https://github.com/JianquanLu/GREAT-PVT) | Fork + upstream contributor | GNSS defaults, BDS coverage, runtime robustness |
+| [`yuni-tab`](https://github.com/JianquanLu/yuni-tab) | Fork + independent improvements | Browser UX, Google suggestions, wallpaper reliability |
+| [`JianquanLu`](https://github.com/JianquanLu/JianquanLu) | Profile source | This visual profile and contribution record |
 
-## Toolbox
+## Working stack
 
 <p>
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/MATLAB-e16720?style=flat-square&logo=mathworks&logoColor=white" alt="MATLAB" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=111111" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=111111" alt="Linux" />
+  <img src="https://img.shields.io/badge/C%2B%2B-111820?style=flat-square&logo=cplusplus&logoColor=65D7D1" alt="C++">
+  <img src="https://img.shields.io/badge/Python-111820?style=flat-square&logo=python&logoColor=F5C96A" alt="Python">
+  <img src="https://img.shields.io/badge/MATLAB-111820?style=flat-square&logo=mathworks&logoColor=EF6A5B" alt="MATLAB">
+  <img src="https://img.shields.io/badge/JavaScript-111820?style=flat-square&logo=javascript&logoColor=F5C96A" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Git-111820?style=flat-square&logo=git&logoColor=EF6A5B" alt="Git">
+  <img src="https://img.shields.io/badge/Windows_%2F_Linux-111820?style=flat-square&logo=linux&logoColor=65D7D1" alt="Windows and Linux">
 </p>
 
-## GitHub activity
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=JianquanLu&show_icons=true&hide_border=true&bg_color=0d1117&title_color=8b9cf6&icon_color=ef7b7b&text_color=c9d1d9&ring_color=8b9cf6" alt="Jianquan's GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JianquanLu&layout=compact&hide_border=true&bg_color=0d1117&title_color=8b9cf6&text_color=c9d1d9" alt="Most used languages" />
-
-</div>
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=JianquanLu&hide_border=true&background=0D1117&ring=8B9CF6&fire=EF7B7B&currStreakLabel=C9D1D9&sideLabels=C9D1D9&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8B949E" alt="GitHub contribution streak" />
-
-<br />
-<sub>Thanks for stopping by. Explore a project, open an issue, or say hello.</sub>
-
-</div>
+<p align="center">
+  <sub>Positioning research, careful validation, and practical open-source work.</sub>
+</p>
